@@ -108,19 +108,19 @@ public class App {
 //                            }
 //                        }));
 //
-        PCollection<PhoneEventMessage> jsonSweepstakesEligible =
-                inpPipeline.apply("Sweepstakes eligible",
-                        Filter.by((SerializableFunction<PubsubMessage, Boolean>) msg -> {
-                            try {
-                                if (GetEventName(msg) == EventName.UNITY_LOGIN) {
-                                    return new PhoneEventMessage(msg);
-                                }
-                            } catch (JsonProcessingException e) {
-                                throw new RuntimeException(e);
-                            } catch (NoSuchAlgorithmException e) {
-                                throw new RuntimeException(e);
-                            }
-                        } ));
+//        PCollection<PhoneEventMessage> jsonSweepstakesEligible =
+//                inpPipeline.apply("Sweepstakes eligible",
+//                        Filter.by((SerializableFunction<PubsubMessage, Boolean>) msg -> {
+//                            try {
+//                                if (GetEventName(msg) == EventName.UNITY_LOGIN) {
+//                                    return new PhoneEventMessage(msg);
+//                                }
+//                            } catch (JsonProcessingException e) {
+//                                throw new RuntimeException(e);
+//                            } catch (NoSuchAlgorithmException e) {
+//                                throw new RuntimeException(e);
+//                            }
+//                        } ));
 
 
 
