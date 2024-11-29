@@ -38,6 +38,7 @@ public class PubSubPipelineTest {
             message1
     };
 
+
     static final List<PubsubMessage> MESSAGES = Arrays.asList(INPUT_MESSAGES);
 
     @Test
