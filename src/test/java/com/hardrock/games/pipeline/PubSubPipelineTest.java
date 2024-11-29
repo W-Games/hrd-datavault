@@ -33,6 +33,7 @@ public class PubSubPipelineTest {
             entry("event_name", EventName.UNITY_LOGIN.getText())
     ),"message_1", null);
 
+
     static final PubsubMessage[] INPUT_MESSAGES = new PubsubMessage[] {
             message1
     };
